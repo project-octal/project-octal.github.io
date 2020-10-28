@@ -4,15 +4,8 @@ layout: default
 
 An opinionated suite of open source projects and configurations aimed at simplifying the deployment and management of enterprise Kubernetes clusters.
 
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
 # OCTAL Components
+
 | Name                   | Version       | Repo Link    |
 |:-----------------------|:--------------|:-------------|
 | Open Policy Agent      | v0.23.2       | In Progress  |

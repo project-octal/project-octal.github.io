@@ -14,7 +14,7 @@ An opinionated suite of open source projects and configurations aimed at simplif
 
 # OCTAL Components
 | Name                   | Version       | Repo Link    |
-| :--------------------- | :------------ | :----------- |
+|:-----------------------|:--------------|:-------------|
 | Open Policy Agent      | v0.23.2       | In Progress  |
 | Cert-Manager           | v1.0.2        | Beta         |
 | Traefik                | v2.3.1        | Beta         |

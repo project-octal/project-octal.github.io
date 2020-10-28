@@ -28,15 +28,18 @@
     </header>
     <div class="nav-div-outer">
     <div class="nav-div-inner">
-    <ul>
-      <li><a href="./" class="{% if page.name == "index.md" %}active{% endif %}">Home</a></li>
-      <li><a href="./sdlc.html" class="{% if page.name == "sdlc.md" %}active{% endif %}">SDLC</a></li>
+    <ul >
+      <li><a href="/" class="{% if page.name == "index.md" %}active{% endif %}">Home</a></li>
+      <li><a href="/site-pages/overview.html" class="{% if page.name == "overview.md" %}active{% endif %}">Overview</a></li>
+      <li><a href="/site-pages/sdlc.html" class="{% if page.name == "sdlc.md" %}active{% endif %}">SDLC</a></li>
       <li class="dropdown {% if page.is_component %}active{% endif %}">
         <a href="javascript:void(0)" class="dropbtn">Components</a>
         <div class="dropdown-content">
-          <a href="./components.html">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="/site-pages/components/open-policy-agent.html">Open Policy Agent</a>
+          <a href="/site-pages/components/cert-manager.html">Cert-Manager</a>
+          <a href="/site-pages/components/traefik.html">Traefik</a>
+          <a href="/site-pages/components/argo.html">Argo</a>
+          <a href="/site-pages/components/linkerd2.html">Linkerd2</a>
         </div>
       </li>
     </ul>

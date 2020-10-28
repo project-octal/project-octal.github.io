@@ -3,7 +3,7 @@ layout: default
 title: Project OCTAL
 ---
 
-# Overview
+### What is Project OCTAL?
 An opinionated suite of open source projects and configurations aimed at simplifying the deployment and management of enterprise Kubernetes clusters.
 
 # OCTAL Components

@@ -177,12 +177,12 @@ a {
 
   @include medium {
     padding: 2rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   @include small {
     padding: 1rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   
   kbd {
@@ -353,6 +353,7 @@ a {
 
 
  table {
+    display: table;
     width: 100%;
     margin: 0px;
     overflow: auto;
@@ -362,7 +363,9 @@ a {
     th {
       font-weight: bold;
     }
-    th, td {
+    
+    th,
+    td {
       padding: 0.5rem 1rem;
       border: 1px solid $table-border-color;
     }
@@ -370,6 +373,8 @@ a {
       width: 100%;
       align-items: stretch;
       display:inline-block;
+      padding: 0.5rem 1rem;
+      border: 1px solid $table-border-color;
     }
   }
 

@@ -1,7 +1,7 @@
 @import "normalize";
 @import "rouge-github";
 @import "variables";
-@import "nav-menu";
+@import "top-nav-menu";
 @import "logo";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
@@ -12,13 +12,13 @@
 }
 
 @mixin medium {
-  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+  @media screen and (min-width: #{$small-breakpoint}) and (max-width: #{$large-breakpoint}) {
     @content;
   }
 }
 
 @mixin small {
-  @media screen and (max-width: #{$medium-breakpoint}) {
+  @media screen and (max-width: #{$small-breakpoint}) {
     @content;
   }
 }
@@ -169,20 +169,20 @@ a {
   }
 
   @include large {
-    max-width: 64rem;
+    max-width: 80rem;
     padding: 2rem 6rem;
     margin: 0 auto;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   @include medium {
-    padding: 2rem 4rem;
-    font-size: 1.1rem;
+    padding: 2rem;
+    font-size: 0.9rem;
   }
 
   @include small {
-    padding: 2rem 1rem;
-    font-size: 1rem;
+    padding: 1rem;
+    font-size: 0.8rem;
   }
   
   kbd {
@@ -220,9 +220,19 @@ a {
   }
 
   code {
+    @include large {
+      font-size: 0.9rem;
+    }
+  
+    @include medium {
+      font-size: 0.8rem;
+    }
+  
+    @include small {
+      font-size: 0.7rem;
+    }
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 0.9rem;
     color: $code-text-color;
     background-color: $code-bg-color;
     border-radius: 0.3rem;
@@ -232,7 +242,18 @@ a {
     padding: 0.8rem;
     margin-top: 0;
     margin-bottom: 1rem;
-    font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    @include large {
+      font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    }
+  
+    @include medium {
+      font: 0.9rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    }
+  
+    @include small {
+      font: 0.8rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    }
+    
     color: $code-text-color;
     word-wrap: normal;
     background-color: $code-bg-color;
@@ -240,9 +261,19 @@ a {
     border-radius: 0.3rem;
 
     > code {
+      @include large {
+        font-size: 0.9rem;
+      }
+    
+      @include medium {
+        font-size: 0.8rem;
+      }
+    
+      @include small {
+        font-size: 0.7rem;
+      }
       padding: 0;
       margin: 0;
-      font-size: 0.9rem;
       color: $code-text-color;
       word-break: normal;
       white-space: pre;
@@ -262,9 +293,19 @@ a {
 
   .highlight pre,
   pre {
+    @include large {
+      font-size: 0.9rem;
+    }
+  
+    @include medium {
+      font-size: 0.9rem;
+    }
+  
+    @include small {
+      font-size: 0.9rem;
+    }
     padding: 0.8rem;
     overflow: auto;
-    font-size: 0.9rem;
     line-height: 1.45;
     border-radius: 0.3rem;
     -webkit-overflow-scrolling: touch;
@@ -308,22 +349,27 @@ a {
     }
   }
 
-  table {
-    display: block;
+
+
+
+ table {
     width: 100%;
+    margin: 0px;
     overflow: auto;
     word-break: normal;
     word-break: keep-all; // For Firefox to horizontally scroll wider tables.
     -webkit-overflow-scrolling: touch;
-
     th {
       font-weight: bold;
     }
-
-    th,
-    td {
+    th, td {
       padding: 0.5rem 1rem;
       border: 1px solid $table-border-color;
+    }
+    th:last-child,td:last-child {
+      width: 100%;
+      align-items: stretch;
+      display:inline-block;
     }
   }
 

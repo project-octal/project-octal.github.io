@@ -1,0 +1,73 @@
+@mixin large {
+  @media screen and (min-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: #{$small-breakpoint}) and (max-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: #{$small-breakpoint}) {
+    @content;
+  }
+}
+
+ul {
+  @include large {
+    font-size: 1rem;
+  }
+  @include medium {
+    font-size: 0.9rem;
+  }
+  @include small {
+    font-size: 0.8rem;
+  }
+  top: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.nav-div-outer {
+  width: 100%;
+  margin: auto;
+  background-color: #333;
+}
+.nav-div-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  @include large {
+    padding: 14px 16px;
+  }
+  @include medium {
+    padding: 12px 14px;
+  }
+  @include small {
+    padding: 10px 12px;
+  }
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.active {
+  background-color:  #3DC412;
+}
+li a:hover {
+  background-color: #3DC412;
+}

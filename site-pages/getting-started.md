@@ -1,7 +1,10 @@
 ---
-layout: default
+layout: documentation
 title: Project OCTAL
 ---
+
+# Prerequisites
+
 
 # Getting Started
 

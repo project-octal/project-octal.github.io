@@ -29,7 +29,7 @@
     </header>
     <div class="nav-div-outer">
     <div class="nav-div-inner">
-    <ul >
+    <ul>
       <li><a href="/" class="{% if page.name == "index.md" %}active{% endif %}">Home</a></li>
       <li><a href="/site-pages/getting-started.html" class="{% if page.name == "getting-started.md" %}active{% endif %}">Getting Started</a></li>
       <li><a href="/site-pages/components.html" class="{% if page.name == "components.md" %}active{% endif %}">Components</a></li>
@@ -38,7 +38,6 @@
     </div>
     <main id="content" class="main-content" role="main">
       {{ content }}
-      
       <footer class="site-footer">
         {% if site.github.is_project_page %}
           <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>

@@ -19,7 +19,7 @@ Project Octal is a set of open source projects and configurations collated into 
 At this time 3 of the 5 core modules have been implemented. The implemented modules: terraform-kubernetes-argocd, terraform-kubernetes-cert-manager, and terraform-kubernetes-traefik are available via the Terraform public registry.
 
 More information on the implemented core modules can be found here:
-- [terraform-kubernetes-argocd](/site-pages/octal-core/argo.html)
+- [terraform-kubernetes-argocd](/site-pages/octal-core/argocd.html)
 - [terraform-kubernetes-cert-manager](/site-pages/octal-core/cert-manager.html)
 - [terraform-kubernetes-traefik](/site-pages/octal-core/traefik.html)
 

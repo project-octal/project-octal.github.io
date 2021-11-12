@@ -12,7 +12,7 @@ Project Octal is a set of open source projects and configurations collated into 
 
 ---
 
-# Module Implementation Status
+# Core Module Implementation Status
 
 ## Current Capability
 

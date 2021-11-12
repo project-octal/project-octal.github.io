@@ -1,0 +1,49 @@
+<style>
+
+
+</style>
+
+<div class="nav-div-outer">
+<div class="nav-div-inner">
+
+  <div class="dropdown {% if page.name == "index.md" %}active{% endif %}">
+      <button class="dropbtn"><a href="/" style="color:white;">Home</a></button>
+  </div>
+
+  <div class="dropdown {% if page.name == "getting-started.md" %}active{% endif %}">
+      <button class="dropbtn"><a href="/site-pages/getting-started.html" style="color:white;">Getting Started</a></button>
+  </div>
+
+  <div class="dropdown {% if page.name == "octal-core.md" %}active{% endif %}">
+      <button class="dropbtn"><a href="/site-pages/octal-core.html" style="color:white;">Octal Core</a>
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="/site-pages/octal-core/open-policy-agent.html">Open Policy Agent</a>
+        <a href="/site-pages/octal-core/cert-manager.html">Cert-Manager</a>
+        <a href="/site-pages/octal-core/traefik.html">Traefik</a>
+        <a href="/site-pages/octal-core/argo.html">ArgoCD</a>
+        <a href="/site-pages/octal-core/linkerd.html">Linkerd</a>
+      </div>
+  </div>
+
+  <div class="dropdown {% if page.name == "octal-extras.md" %}active{% endif %}">
+      <button class="dropbtn"><a href="/site-pages/octal-extras.html" style="color:white;">Octal Extras</a>
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Foo</a>
+        <a href="#">Bar</a>
+        <a href="#">Baz</a>
+      </div>
+  </div>
+
+</div>
+</div>
+
+<!--
+    <ul>
+        <li><a href="/site-pages/components/cert-manager.html">Cert-Manager</a></li>
+        </ul>
+
+-->

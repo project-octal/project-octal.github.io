@@ -14,31 +14,25 @@
     <meta charset="UTF-8">
 
 {% seo %}
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+{% include statcounter.html %}
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
-
     <header class="page-header" role="banner">
     <img class="logo-image" src="/assets/images/octal-logo-light.png" />
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
     </header>
-    <div class="nav-div-outer">
-    <div class="nav-div-inner">
-    <ul >
-      <li><a href="/" class="{% if page.name == "index.md" %}active{% endif %}">Home</a></li>
-      <li><a href="/site-pages/getting-started.html" class="{% if page.name == "getting-started.md" %}active{% endif %}">Getting Started</a></li>
-      <li><a href="/site-pages/components.html" class="{% if page.name == "components.md" %}active{% endif %}">Components</a></li>
-    </ul>
-    </div>
-    </div>
+
+{% include navigation.html %}
+
     <main id="content" class="main-content" role="main">
       {{ content }}
-      
       <footer class="site-footer">
         {% if site.github.is_project_page %}
           <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>

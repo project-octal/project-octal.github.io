@@ -1,25 +1,28 @@
 ---
 layout: default
-title: Project OCTAL
+title: Project Octal
 ---
 
-## What is Project OCTAL?
-Project OCTAL is an opinionated suite of open source projects and configurations collated into a set of Terraform modules aimed at simplifying and standardizing the deployment and operation of Kubernetes clusters in an enterprise environment.
+# What is Project Octal?
+Project Octal is a set of open source projects and configurations collated into a set of Terraform modules aimed at simplifying and standardizing the deployment and operation of Kubernetes clusters in enterprise environments.
+
+---
 
 <img class="center" style="width: 30em" src="./assets/images/octal-components.svg">
 
-<!-- Default Statcounter code for Project Octal Homepage
-https://project-octal.github.io/ -->
-<script type="text/javascript">
-var sc_project=12676606; 
-var sc_invisible=1; 
-var sc_security="ba6b3bc1"; 
-</script>
-<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
-<noscript><div class="statcounter"><a title="Web Analytics"
-href="https://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="https://c.statcounter.com/12676606/0/ba6b3bc1/1/"
-alt="Web Analytics"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-<!-- End of Statcounter Code -->
+---
+
+# Implementation Status
+
+At this time 3 of the 5 core modules have been implemented. The implemented modules: terraform-kubernetes-argocd, terraform-kubernetes-cert-manager, and terraform-kubernetes-traefik are available via the Terraform public registry.
+
+Implemented Modules can be found here:
+- [terraform-kubernetes-argocd](/site-pages/octal-core/argo.html)
+- [terraform-kubernetes-cert-manager](/site-pages/octal-core/cert-manager.html)
+- [terraform-kubernetes-traefik](/site-pages/octal-core/traefik.html)
+
+## Existing Capability
+<img class="center" style="width: 30em" src="./assets/images/project-octal-current-capability.png">
+
+## Planned Capability
+<img class="center" style="width: 30em" src="./assets/images/project-octal-planned-capability.png">

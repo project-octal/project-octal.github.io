@@ -1,6 +1,18 @@
 .logo-image {
-    width:150px;
-    height:150px;
+    @include large {
+        width:150px;
+        height:150px;
+      }
+    
+      @include medium {
+        width:125px;
+        height:125px;
+      }
+    
+      @include small {
+        width:100px;
+        height:100px;
+      }
 }
 
 .center {

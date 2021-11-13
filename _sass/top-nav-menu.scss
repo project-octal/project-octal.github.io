@@ -43,14 +43,26 @@
 } 
 
 .dropdown .dropbtn {
-  font-size: 16px;  
+  @include large {
+    font-size: 16px;
+    padding: 14px 16px;
+  }
+  @include medium {
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+  @include small {
+    font-size: 14px;  
+    padding: 10px 12px;
+  }
+  //font-size: 16px;  
   border: none;
   outline: none;
   display: block;
   color: white;
   text-align: center;
   text-decoration: none;
-  padding: 14px 16px;
+//  padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;

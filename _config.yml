@@ -1,5 +1,7 @@
 title: Project Octal
-description: Open Policy Agent | Cert-Manager | Traefik | Argo | Linkerd
+sub_title: Open Policy Agent | Cert-Manager | Traefik | Argo | Linkerd
+tagline: Useful Kubernetes
+description: A suite of projects and configurations aimed at simplifying the deployment and maintenance of mature Kubernetes clusters
 show_downloads: false
 google_analytics: G-BYYZTVF97X
 theme: jekyll-theme-cayman

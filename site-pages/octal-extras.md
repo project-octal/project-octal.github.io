@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Project Octal
+tagline: Extra
 is_component: true
 ---
 

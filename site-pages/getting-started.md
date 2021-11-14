@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Project Octal
+tagline: Getting Started
 ---
 
 ## Prerequisites

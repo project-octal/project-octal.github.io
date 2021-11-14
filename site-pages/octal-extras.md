@@ -5,7 +5,7 @@ tagline: Extra
 is_component: true
 ---
 
-# Project Octal Extra Components
+## Project Octal Extra Components
 
 | Name                   | Version       | Link                                                                 |
 |:-----------------------|:--------------|:---------------------------------------------------------------------|

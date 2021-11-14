@@ -5,7 +5,7 @@ tagline: Open Policy Agent
 is_component: true
 ---
 
-# Open Policy Agent
+## Open Policy Agent
 Module Name: `terraform-kubernetes-opa` | Module License: `Apache License 2.0` | Service License: `Apache License 2.0`
 {: style="color:gray; font-size: 80%; text-align: center;"}
 

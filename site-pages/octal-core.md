@@ -5,7 +5,7 @@ tagline: Core
 is_component: true
 ---
 
-# Project Octal Core Components
+## Project Octal Core Components
 
 | Name                   | Version       | Status    | Link                                                                 |
 |:-----------------------|:--------------|:----------|:---------------------------------------------------------------------------------------------------------------------------------------------|

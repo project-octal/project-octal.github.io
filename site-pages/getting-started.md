@@ -4,14 +4,16 @@ title: Project Octal
 tagline: Getting Started
 ---
 
-## Prerequisites
+## Getting Started
+
+---
+
+### Prerequisites
 - A cloud based or on-prem Kubernetes cluster.
 - Sufficient access to deploy resources to the target cluster.
 - A working knowledge of Terraform workspace setup and configuration application.
 
 ---
-
-## Getting Started
 
 ### Secrets stored in a workspaces `terraform.tfvars` file
 ```hcl-terraform

@@ -5,7 +5,7 @@ is_component: true
 tagline: Auth
 ---
 
-# Configuring OpenID Authentication
+## Configuring OpenID Authentication
 
 The purpose of this guide is to demonstrate the process of configuring an OpenID Application as an authentication and authorization source for Code-Server.
 

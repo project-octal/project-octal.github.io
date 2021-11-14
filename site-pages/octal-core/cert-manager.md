@@ -5,7 +5,7 @@ tagline: Cert-Manager
 is_component: true
 ---
 
-# Cert-Manager
+## Cert-Manager
 Module Name: `terraform-kubernetes-cert-manager` | Module License: `Apache License 2.0` | Service License: `Apache License 2.0`
 {: style="color:gray; font-size: 80%; text-align: center;"}
 

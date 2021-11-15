@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: documentation
 title: Project Octal
 tagline: Getting Started
 ---

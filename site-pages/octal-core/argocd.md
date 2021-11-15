@@ -6,8 +6,10 @@ is_component: true
 ---
 
 ## ArgoCD
-Module Name: `terraform-kubernetes-argocd` | Module License: `Apache License 2.0` | Service License: `Apache License 2.0`
-{: style="color:gray; font-size: 80%; text-align: center;"}
+Module Name: `terraform-kubernetes-argocd`  
+Module License: `Apache License 2.0`  
+Service License: `Apache License 2.0`
+{: style="color:gray; font-size: 80%; text-align: left;"}
 
 ---
 

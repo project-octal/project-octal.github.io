@@ -6,8 +6,10 @@ is_component: true
 ---
 
 ## Traefik
-Module Name: `terraform-kubernetes-traefik` | Module License: `Apache License 2.0` | Service License: `MIT License`
-{: style="color:gray; font-size: 80%; text-align: center;"}
+Module Name: `terraform-kubernetes-traefik`  
+Module License: `Apache License 2.0`  
+Service License: `MIT License`  
+{: style="color:gray; font-size: 80%; text-align: left;"}
 
 ---
 

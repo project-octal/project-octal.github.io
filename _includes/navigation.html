@@ -10,8 +10,14 @@
       <button class="dropbtn"><a href="/" style="color:white;">Home</a></button>
   </div>
   <span> | </span>
-  <div class="dropdown {% if page.name == "getting-started.md" %}active{% endif %}">
-      <button class="dropbtn"><a href="/site-pages/getting-started.html" style="color:white;">Getting Started</a></button>
+  <div class="dropdown {% if page.name == "documentation.md" %}active{% endif %}">
+      <button class="dropbtn"><a href="/site-pages/docs/getting-started.html" style="color:white;">Docs</a></button>
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="/site-pages/docs/getting-started.html">Getting Started</a>
+        <a href="/site-pages/docs/auth.html">OAuth Configuration</a>
+      </div>
   </div>
   <span> | </span>
   <div class="dropdown {% if page.name == "octal-core.md" %}active{% endif %}">

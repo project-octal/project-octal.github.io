@@ -5,17 +5,27 @@ tagline: Getting Started
 ---
 
 ## Getting Started
+{:toc}
+
+Note about how this document is meant to get a bare minimum Octal deployment.
 
 ---
 
 ### Prerequisites
+{:toc}
 - A cloud based or on-prem Kubernetes cluster.
 - Sufficient access to deploy resources to the target cluster.
 - A working knowledge of Terraform workspace setup and configuration application.
+- A Provider for OAuth authentication
+- Some DNS configuration
 
 ---
 
-### Secrets stored in a workspaces `terraform.tfvars` file
+### Workspace Setup
+{:toc}
+
+These values might be stored in a `terraform.tfvars` file
+
 ```hcl-terraform
 
 # The Let's Encrypt account key encoded in Base64
@@ -39,7 +49,8 @@ argocd_oidc_requested_id_token_claims = {
 }
 ```
 
-### Contents of the workspaces `project-octal.tf` file
+### Configure Traefik
+{:toc}
 ```hcl-terraform
 module "traefik" {
   source  = "project-octal/traefik/kubernetes"
@@ -55,7 +66,11 @@ module "traefik" {
   service_type                         = "LoadBalancer"
   preferred_node_selector              = []
 }
+```
 
+### Configure Cert-Manager
+{:toc}
+```hcl-terraform
 module "cert_manager" {
   source  = "project-octal/cert-manager/kubernetes"
   version = "0.0.3"
@@ -72,15 +87,16 @@ module "cert_manager" {
     }
   }
 }
+```
 
+### Configure ArgoCD
+{:toc}
+```hcl-terraform
 module "argocd" {
   source  = "project-octal/argocd/kubernetes"
   version = "0.0.4"
 
   argocd_url        = "argocd.turnbros.app"
-  argocd_image_tag  = "v2.0.2"
-  haproxy_image_tag = "2.0.4"
-  redis_image_tag   = "6.2.1-alpine"
 
   namespace              = "kube-argocd"
   argocd_server_replicas = 2
@@ -91,34 +107,6 @@ module "argocd" {
 
   cluster_cert_issuer = module.cert_manager.cert_issuer
   ingress_class       = module.traefik.ingress_class
-
-  # ArgoCD Server requests and limits.
-  argocd_server_requests = {
-    cpu    = "300m"
-    memory = "256Mi"
-  }
-  argocd_server_limits = {
-    cpu    = "600m"
-    memory = "512Mi"
-  }
-
-  # ArgoCD Repo Server requests, limits, and other general configuration
-  argocd_repo_requests = {
-    cpu    = "300m"
-    memory = "256Mi"
-  }
-  argocd_repo_limits = {
-    cpu    = "600m"
-    memory = "512Mi"
-  }
-  repo_server_exec_timeout = "300"
-  argocd_repositories = [
-    {
-      name = "helm-public"
-      type = "helm"
-      url  = "https://charts.helm.sh/stable"
-    }
-  ]
 
   # OIDC Configuration Argo will use for authentication and authorization
   oidc_config = {

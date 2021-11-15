@@ -1,26 +1,29 @@
 <style>
 .doc-aside {
-    float:left
+    float:left;
+    padding: 7.5em 3em;   
+    max-width: 30%;
+    overflow: scroll;
+    background-color: '#dfe1e6';
+}
+.doc-aside-list {
+    
+    padding: 0em 2em;
+    margin-top: 0.5em;
 }
 </style>
 
 <div class="doc-aside">
-<strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#compiled-css-and-js">Compiled CSS and JS</a></li>
-    <li><a href="#source-files">Source files</a></li>
-    <li><a href="#examples">Examples</a></li>
-    <li><a href="#cdn-via-jsdelivr">CDN via jsDelivr</a></li>
-    <li><a href="#package-managers">Package managers</a>
-      <ul>
-        <li><a href="#npm">npm</a></li>
-        <li><a href="#yarn">yarn</a></li>
-        <li><a href="#rubygems">RubyGems</a></li>
-        <li><a href="#composer">Composer</a></li>
-        <li><a href="#nuget">NuGet</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+    <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+    <nav id="TableOfContents">
+    <ul class="doc-aside-list">
+        <li><a href="#prerequisites" class="toc-link">Prerequisites</a></li>
+        <li><a href="#configuring-oauth">Configuring OAuth</a></li>
+        <li><a href="#configuring-dns">Configuring DNS</a></li>
+        <li><a href="#workspace-setup">Workspace Setup</a></li>
+        <li><a href="#deploying-traefik">Deploying Traefik</a></li>
+        <li><a href="#deploying-cert-manager">Deploying Cert-Manager</a></li>
+        <li><a href="#deploying-argocd">Deploying ArgoCD</a></li>
+    </ul>
+    </nav>
 </div>

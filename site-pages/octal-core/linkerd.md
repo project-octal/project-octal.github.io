@@ -6,8 +6,10 @@ is_component: true
 ---
 
 ## Linkerd2
-Module Name: `terraform-kubernetes-linkerd2` | Module License: `Apache License 2.0` | Service License: `Apache License 2.0`
-{: style="color:gray; font-size: 80%; text-align: center;"}
+Module Name: `terraform-kubernetes-linkerd2`  
+Module License: `Apache License 2.0`  
+Service License: `Apache License 2.0`
+{: style="color:gray; font-size: 80%; text-align: left;"}
 
 ---
 

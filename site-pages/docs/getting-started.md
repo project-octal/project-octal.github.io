@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Project Octal
+title: Getting Started
 tagline: Getting Started
 ---
 

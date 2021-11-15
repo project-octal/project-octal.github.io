@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Project Octal
+title: Cert-Manager
 tagline: Cert-Manager
 is_component: true
 ---

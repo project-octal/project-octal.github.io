@@ -1,5 +1,5 @@
 ---
 layout: default
-title: Project Octal
+title: Documentation
 tagline: Documentation
 ---

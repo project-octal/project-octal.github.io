@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Project Octal
+title: Linkerd
 tagline: Linkerd
 is_component: true
 ---

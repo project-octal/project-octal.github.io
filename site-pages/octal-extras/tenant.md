@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Project Octal
+title: Tenant
 tagline: Tenant
 is_component: true
 ---

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Project Octal
+title: Auth
 is_component: true
 tagline: Auth
 ---

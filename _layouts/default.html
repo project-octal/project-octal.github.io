@@ -25,8 +25,8 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
     <header class="page-header small" role="banner">
     <img class="logo-image" src="/assets/images/octal-logo-light.png" />
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.sub_title | default: site.sub_title | default: site.github.project_tagline }}</h2>
+      <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ site.sub_title | default: site.github.project_tagline }}</h2>
     </header>
 
 {% include navigation.html %}

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Project Octal
+title: Open Policy Agent
 tagline: Open Policy Agent
 is_component: true
 ---

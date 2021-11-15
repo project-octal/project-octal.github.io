@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Project Octal
+title: Traefik
 tagline: Traefik
 is_component: true
 ---

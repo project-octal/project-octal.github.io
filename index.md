@@ -10,10 +10,10 @@ title: Project Octal
 ## What is Project Octal?
 Project Octal is a set of open source projects and configurations collated into a set of Terraform modules aimed at simplifying and standardizing the deployment and operation of Kubernetes clusters in enterprise environments.
 
-### Why Project Octal?
+## Why Project Octal?
 Kubernetes has given rise to a thriving ecosystem of tooling, much of which is open source, and some of which is mature and well documented. The intent of Project Octal is simply to select from this vast ecosystem, mature, well documented tooling ideally with available paid enterprise support that satisfies a specific use-case that can be easily operationalized using Terraform modules.
 
-#### Project Octal Component Common Traits
+### Project Octal Component Common Traits
 - Deployment and configuration can be done declaratively
 - Documentation is thorough and current
 - Available paid enterprise support
@@ -22,6 +22,9 @@ Kubernetes has given rise to a thriving ecosystem of tooling, much of which is o
 - The tooling should be licensed under either Apache2.0 or MIT
 
 The most important requirement in the above list is the ability to deploy and manage the tool declaratively. The tool will be packaged as a Terraform module, and that module **must** be capable of managing the tools entire lifecycle. Other items such as "*Has seen general industry adoption*" are much harder to quantify and admittedly subjective. In these cases the decision will rely on experience and research.
+
+## Have questions or suggestions?
+Come join the [Project-Octal Discord](https://discord.gg/RyUrTAsa3C) server!
 
 ## Core Module Implementation Status
 

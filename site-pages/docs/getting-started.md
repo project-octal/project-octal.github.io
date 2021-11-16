@@ -7,7 +7,7 @@ tagline: Getting Started
 ## Getting Started
 {:toc}
 
-Note about how this document is meant to get a bare minimum Octal deployment.
+The following guide is meant to outline the bare-minium configuration required to stand up the Traefik, Cert-Manager, and ArgoCD modules. Please visit the module documentation which will contain detailed implementation and feature information.
 
 ---
 

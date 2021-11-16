@@ -6,8 +6,9 @@ is_component: true
 ---
 
 ## Octal-Tenant
-Module Name: `terraform-kubernetes-octal-tenant` | Module License: `Apache License 2.0`
-{: style="color:gray; font-size: 80%; text-align: center;"}
+Module Name: `terraform-kubernetes-octal-tenant`  
+Module License: `Apache License 2.0`  
+{: style="color:gray; font-size: 80%; text-align: left;"}
 
 ---
 

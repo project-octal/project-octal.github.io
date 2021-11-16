@@ -9,4 +9,4 @@ is_component: true
 
 | Name                   | Version       | Link                                                                 |
 |:-----------------------|:--------------|:---------------------------------------------------------------------|
-| Octal-Tenant           | v0.0.1        | https://github.com/project-octal/terraform-kubernetes-octal-tenant   |
+| [Octal-Tenant](/site-pages/octal-extras/tenant.html)           | v0.0.1        | https://github.com/project-octal/terraform-kubernetes-octal-tenant   |

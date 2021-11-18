@@ -33,5 +33,5 @@ Terraform Registry: [https://registry.terraform.io/modules/project-octal/argocd-
 
 #### terraform-kubernetes-argocd-application
 Github Repository: [https://github.com/project-octal/terraform-kubernetes-argocd-application](https://github.com/project-octal/terraform-kubernetes-argocd-application)
-Terraform Registry: 
+Terraform Registry: [https://registry.terraform.io/modules/project-octal/argocd-application/kubernetes/latest](https://registry.terraform.io/modules/project-octal/argocd-application/kubernetes/latest)
 {: style="color:gray; font-size: 80%; text-align: left;"}

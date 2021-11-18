@@ -18,6 +18,7 @@ Service License: `Apache License 2.0`
 Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes.
 
 ### Links
+
 |:-----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
 | Service Homepage       | [https://argoproj.github.io/cd/](https://argoproj.github.io/cd/)                                                                               |
 | Service Documentation  | [https://argo-cd.readthedocs.io/en/stable/](https://argo-cd.readthedocs.io/en/stable/)                                                         |
@@ -27,11 +28,11 @@ Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes.
 ### Related Modules
 
 #### terraform-kubernetes-argocd-project
-Github Repository: [https://github.com/project-octal/terraform-kubernetes-argocd-project](https://github.com/project-octal/terraform-kubernetes-argocd-project)
-Terraform Registry: [https://registry.terraform.io/modules/project-octal/argocd-project/kubernetes/latest](https://registry.terraform.io/modules/project-octal/argocd-project/kubernetes/latest)
-{: style="color:gray; font-size: 80%; text-align: left;"}
+Github Repository: [https://github.com/project-octal/terraform-kubernetes-argocd-project](https://github.com/project-octal/terraform-kubernetes-argocd-project)  
+Terraform Registry: [https://registry.terraform.io/modules/project-octal/argocd-project/kubernetes/latest](https://registry.terraform.io/modules/project-octal/argocd-project/kubernetes/latest)  
+
 
 #### terraform-kubernetes-argocd-application
-Github Repository: [https://github.com/project-octal/terraform-kubernetes-argocd-application](https://github.com/project-octal/terraform-kubernetes-argocd-application)
-Terraform Registry: [https://registry.terraform.io/modules/project-octal/argocd-application/kubernetes/latest](https://registry.terraform.io/modules/project-octal/argocd-application/kubernetes/latest)
-{: style="color:gray; font-size: 80%; text-align: left;"}
+Github Repository: [https://github.com/project-octal/terraform-kubernetes-argocd-application](https://github.com/project-octal/terraform-kubernetes-argocd-application)  
+Terraform Registry: [https://registry.terraform.io/modules/project-octal/argocd-application/kubernetes/latest](https://registry.terraform.io/modules/project-octal/argocd-application/kubernetes/latest)  
+
